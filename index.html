@@ -146,7 +146,9 @@ footer img{height:36px;opacity:.4}
 .event-header{flex-wrap:wrap}
 .event-date{margin-left:auto}
 .event-gallery.tall img{aspect-ratio:3/4}
-.hero-bg{background-position:center 30%}
+.hero-bg{background-position:center 60%}
+@media(max-width:768px){.hero-bg{background-position:82% 50%}}
+.hero-name{white-space:nowrap;font-size:clamp(30px,8.4vw,130px)}
 .player{display:flex;gap:20px;align-items:center;padding:20px;background:var(--card);border:1px solid var(--border);text-decoration:none;color:var(--text);max-width:640px;transition:border-color .2s}
 .player:hover{border-color:var(--accent)}
 .player-cover{width:104px;height:104px;flex:none;background-size:cover;background-position:center;border:1px solid var(--border)}
@@ -188,7 +190,7 @@ footer img{height:36px;opacity:.4}
 <body>
 
 <nav>
-  <a href="#" class="nav-logo"><span aria-label="CHARLY" style="white-space:nowrap;letter-spacing:.1em">CH<svg viewBox="0 0 100 86" aria-hidden="true" style="height:.74em;width:.86em;fill:currentColor;vertical-align:baseline;margin:0 .04em"><path d="M50 0 100 86H0z"/></svg>RLY</span></a>
+  <a href="#" class="nav-logo"><span aria-label="CHARLY" style="white-space:nowrap;letter-spacing:.1em">CH<svg viewBox="0 0 100 86" aria-hidden="true" style="height:.56em;width:.64em;fill:currentColor;vertical-align:baseline;margin:0 .04em"><path d="M50 0 100 86H0z"/></svg>RLY</span></a>
   <div class="nav-links">
     <a href="#bio">Artista</a>
     <a href="#gallery">Galería</a>
@@ -205,7 +207,7 @@ footer img{height:36px;opacity:.4}
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">DJ · La Plata, Argentina</p>
-    <h1 class="hero-name"><span aria-label="CHARLY" style="white-space:nowrap;letter-spacing:.1em">CH<svg viewBox="0 0 100 86" aria-hidden="true" style="height:.74em;width:.86em;fill:currentColor;vertical-align:baseline;margin:0 .04em"><path d="M50 0 100 86H0z"/></svg>RLY</span><br>ROSSO</h1>
+    <h1 class="hero-name"><span aria-label="CHARLY" style="white-space:nowrap;letter-spacing:.1em">CH<svg viewBox="0 0 100 86" aria-hidden="true" style="height:.56em;width:.64em;fill:currentColor;vertical-align:baseline;margin:0 .04em"><path d="M50 0 100 86H0z"/></svg>RLY</span> ROSSO</h1>
     <p class="hero-sub">House · Tech House · Progressive Techno &nbsp;·&nbsp; Residente de SLVRS Music</p>
     <div class="hero-actions">
       <a href="#music" class="btn-primary">Escuchar</a>
