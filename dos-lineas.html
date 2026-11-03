@@ -207,7 +207,7 @@ footer img{height:36px;opacity:.4}
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">DJ · La Plata, Argentina</p>
-    <h1 class="hero-name"><span aria-label="CHARLY" style="white-space:nowrap;letter-spacing:.1em">CH<svg viewBox="0 0 100 86" aria-hidden="true" style="height:.68em;width:.79em;fill:currentColor;vertical-align:baseline;margin:0 .04em"><path d="M50 0 100 86H0z"/></svg>RLY</span><br>ROSSO</h1>
+    <h1 class="hero-name"><span aria-label="CHARLY" style="white-space:nowrap;letter-spacing:.1em">CH<svg viewBox="0 0 100 86" aria-hidden="true" style="height:.68em;width:.79em;fill:currentColor;vertical-align:baseline;margin:0 .04em"><path d="M50 0 100 86H0z"/></svg>RLY</span><br><span id="rosso">ROSSO</span></h1>
     <p class="hero-sub">House · Tech House · Progressive Techno &nbsp;·&nbsp; Residente de SLVRS Music</p>
     <div class="hero-actions">
       <a href="#music" class="btn-primary">Escuchar</a>
@@ -313,5 +313,11 @@ footer img{height:36px;opacity:.4}
 })();
 </script>
 <div class="draft-tag">Borrador · Presskit</div>
-</body>
+<script>
+(function(){var h=document.querySelector('.hero-name'),a=h.firstElementChild,b=document.getElementById('rosso');
+function fit(){b.style.cssText='display:inline-block;letter-spacing:0;margin-right:0;font-size:1.25em;line-height:.9';a.style.display='inline-block';
+var w=a.getBoundingClientRect().width,r=b.getBoundingClientRect().width,n=b.textContent.length,ls=(w-r)/(n-1);
+b.style.letterSpacing=ls+'px';b.style.marginRight=(-ls)+'px';}
+(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(fit);addEventListener('resize',fit);addEventListener('load',fit);})();
+</script></body>
 </html>
