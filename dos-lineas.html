@@ -142,13 +142,12 @@ footer img{height:36px;opacity:.4}
 .nvlop-credit:hover{opacity:1}
 .nvlop-credit:hover .nv-word{letter-spacing:.26em}
 
-.bio-grid{align-items:center}
-.bio-photos{position:relative;aspect-ratio:4/5;max-width:520px;width:100%;margin-left:auto}
-.bio-photos .frame{position:absolute;overflow:hidden;padding:3px;background:var(--text);box-shadow:0 30px 70px -20px rgba(0,0,0,.8)}
-.bio-photos .frame img{display:block;width:100%;height:100%;object-fit:cover}
-.bio-photos .frame.a{inset:0 22% 16% 0;transform:rotate(-2.5deg)}
-.bio-photos .frame.b{inset:24% 0 0 34%;transform:rotate(2.5deg);z-index:2;border:0;box-shadow:0 30px 70px -10px rgba(0,0,0,.9)}
-@media(max-width:768px){.bio-photos{order:-1;max-width:420px;margin:0 auto}}
+.bio-grid{align-items:end}
+.bio-photos{position:relative;display:flex;align-items:flex-end;justify-content:center;max-width:560px;width:100%;margin-left:auto}
+.bio-photos img{display:block;height:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.6))}
+.bio-photos .a{width:50%;position:relative;z-index:1}
+.bio-photos .b{width:58%;margin-left:-8%;position:relative;z-index:2}
+@media(max-width:768px){.bio-photos{order:-1;max-width:440px;margin:0 auto}}
 .event-venue{font-size:13px;color:var(--dim);letter-spacing:1px}
 .event-header{flex-wrap:wrap}
 .event-date{margin-left:auto}
@@ -233,7 +232,7 @@ footer img{height:36px;opacity:.4}
       <p>Pasó por fiestas y eventos reconocidos del circuito local y compartió cabina con artistas ascendentes, en formatos <strong>B2B y B3B</strong>, con <strong>openings, warm ups y sets mainstream</strong>.</p>
       <p>Su propuesta va del <strong>House</strong> y el <strong>Deep/Minimal Tech House</strong> hasta el lado más oscuro del <strong>Progressive Techno</strong>, siempre buscando el equilibrio entre música alegre, bailable y enérgica. Hoy es <strong>residente de SLVRS Music</strong> y sigue perfeccionando su sonido para llegar a nuevos escenarios.</p>
     </div>
-    <div class="bio-photos"><div class="frame a"><img src="assets/bio.jpg" alt="Charly Rosso" loading="lazy"></div><div class="frame b"><img src="assets/bio2.jpg" alt="Charly Rosso" loading="lazy"></div></div>
+    <div class="bio-photos"><img class="a" src="assets/bio.png" alt="Charly Rosso" loading="lazy"><img class="b" src="assets/bio2.png" alt="Charly Rosso" loading="lazy"></div>
     </div>
   </div>
 </div>
